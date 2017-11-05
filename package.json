@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "bower cache clean && bower install"
+     "postinstall": "./node_modules/bower/bin/bower install" 
   },
   "engines": {
     "node": "6.11.2",
@@ -23,7 +23,4 @@
     "mongoose": "^4.10.8",
     "bower": "^1.8.2"
   },
-  "devDependencies": {
-    "bower": "^1.8.2"
-  }
 }
