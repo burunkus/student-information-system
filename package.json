@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "postinstall": "bower install && angular && angular-route && bootstrap && jquery"
+    "start": "node server.js"
   },
   "engines": {
     "node": "6.11.2",
