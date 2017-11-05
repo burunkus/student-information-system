@@ -1,0 +1,26 @@
+{
+  "name": "student-InfoSys-website",
+  "homepage": "https://github.com/burunkus/student-information-system",
+  "authors": [
+    "Okpala Johnbosco <burunkus2000@gmail.com>"
+  ],
+  "description": "user interface for the student information system",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-auth0": "^2.0.0",
+    "angular-route": "^1.6.6",
+    "angular-jwt": "^0.1.9",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
