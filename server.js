@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 Resource = require('./models/student');
 
 //connect to mongoose
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/studentInformationSystem');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://burunkus:DNA4xc4r@ds249325.mlab.com:49325/students');
 var db = mongoose.connection;
 
 //notify when connected successfully or when an error has occured.
