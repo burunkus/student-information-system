@@ -1,0 +1,90 @@
+	<div class="return-to-home-page"><a href="#/home">Go back</a></div>
+	<div class="alert alert-info alert-dismissible alert-float" role="alert" ng-show="found">
+  		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  		<h4><strong>Info!</strong> {{message}}</h4>
+	</div>
+	<div class="panel panel-default" ng-hide="found">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Edit/Delete Student</h3>
+	  </div>
+	  <div class="panel-body">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form-horizontal" ng-submit="updateStudent()" ng-init="getStudent()">
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">First Name</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="First name" ng-model="student.first_name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Last Name</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="Last name" ng-model="student.last_name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Middle Name</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="Middle name" ng-model="student.middle_name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Student Number</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" readonly placeholder="Student number" ng-model="student.student_number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Course of Study</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="Course of study" ng-model="student.course_of_study">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Gender</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<select ng-model="student.gender" class="form-control">
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Phone Number</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="Phone number" ng-model="student.phone_number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Date of Birth</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="Date of birth" ng-model="student.date_of_birth">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Year of Enrollment</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="year of enrollment" ng-model="student.year_of_enrollment">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4 col-sm-4 col-lg-2">Expected Year of Completion</label>
+						<div class="col-xs-8 col-sm-8 col-lg-8">
+							<input type="text" class="form-control" placeholder="Expected year of completion" ng-model="student.year_of_completion">
+						</div>
+					</div>
+					<div class="row">
+						<div class="update-btn-container">
+							<button type="submit" class="btn btn-primary update-student-btn">Update</button>
+						</div>
+						<div class="pull-left delete-btn-container">
+							<a href="#" class="btn btn-danger" ng-click="removeStudent(student.student_number)" ng-confirm-click="Student will be deleted Parmanently?">Delete</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	  </div>
+	</div>
+	

@@ -1,0 +1,20 @@
+{
+  "name": "andela-student-resource",
+  "version": "1.0.0",
+  "description": "An API backend running on node.js that handles creating, reading, updating and deleting student resource.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Okpala Ebuka J",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.0",
+    "express-jwt-authz": "^1.0.0",
+    "jwks-rsa": "^1.2.0",
+    "mongoose": "^4.10.8"
+  }
+}

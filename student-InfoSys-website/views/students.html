@@ -1,0 +1,45 @@
+	<div class="return-to-home-page"><a href="#/home">Go back</a></div>
+
+	<div class="alert alert-danger alert-dismissible alert-float" role="alert" ng-show="found">
+  		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  		<h4><strong>Info!</strong> {{message}}</h4>
+	</div>
+	
+	<div col-md-6 ng-init="getStudents()" ng-hide="found">
+		<div class="table-responsive">
+			<table class="table table-striped table-hover table-condensed">
+				<thead>
+					<tr>
+						<th class="text-center">#</th>
+						<th class="text-center">Student Number</th>
+						<th class="text-center">First Name</th>
+						<th class="text-center">Last Name</th>
+						<th class="text-center">Middle Name</th>
+						<th class="text-center">Gender</th>
+						<th class="text-center">Course of Study</th>
+						<th class="text-center">Contact</th>
+						<th class="text-center">Date of birthday</th>
+						<th class="text-center">Year of Enrollment</th>
+						<th class="text-center">Year of Completion</th>
+						<th class="text-center">Date Added</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="student in students">
+						<td>{{$index+1}}</td>
+						<td>{{student.student_number}}</td>
+						<td>{{student.first_name}}</td>
+						<td>{{student.last_name}}</td>
+						<td>{{student.middle_name}}</td>
+						<td>{{student.gender}}</td>
+						<td>{{student.course_of_study}}</td>
+						<td>{{student.phone_number}}</td>
+						<td>{{student.date_of_birth}}</td>
+						<td>{{student.year_of_enrollment}}</td>
+						<td>{{student.year_of_completion}}</td>
+						<td>{{student.create_date}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
