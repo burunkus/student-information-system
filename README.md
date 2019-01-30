@@ -1,2 +1,3 @@
 # student-information-system
-A school information system MEAN stack application 
+This system let's users create, update, delete and view profiles 
+User profile are stored in NoSQL database - MongoDB
