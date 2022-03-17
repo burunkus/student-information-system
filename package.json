@@ -20,7 +20,7 @@
     "express-jwt": "^6.0.0",
     "express-jwt-authz": "^1.0.0",
     "jwks-rsa": "^1.2.0",
-    "mongoose": "^4.10.8",
+    "mongoose": "^5.7.5",
     "bower": "^1.8.8"
   }
 }
